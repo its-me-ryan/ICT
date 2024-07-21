@@ -1,0 +1,38 @@
+BEGIN
+    DECLARE password AS STRING
+    DECLARE input1 AS STRING
+    DECLARE input2 AS STRING
+    DECLARE attempts AS INTEGER
+    DECLARE userInput AS STRING
+
+    PRINT "Enter password: "
+    READ input1
+    PRINT "Re-enter password: "
+    READ input2
+
+    IF input1 = input2 THEN
+        password = input1
+        PRINT "Password set successfully."
+    ELSE
+        PRINT "Passwords do not match. Try again."
+        RETURN
+    END IF
+
+    attempts = 0
+    WHILE attempts < 3 DO
+        PRINT "Enter your password: "
+        READ userInput
+
+        IF userInput = password THEN
+            PRINT "Access granted."
+   BREAK
+        ELSE
+            PRINT "Incorrect password. Try again."
+            attempts = attempts + 1
+        END IF
+    END WHILE
+
+    IF attempts = 3 THEN
+        PRINT "Access denied. Too many incorrect attempts."
+    END IF
+END

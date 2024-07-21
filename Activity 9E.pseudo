@@ -1,0 +1,6 @@
+DECLARE Number : INTEGER
+IF ((Number >= 10 AND Number <= 20) OR (Number > 100)) DO
+    PRINT "Number is within the specified range."
+ELSE
+    PRINT "Number is outside the specified range."
+END IF

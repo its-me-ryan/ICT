@@ -1,0 +1,7 @@
+Counter has value of 2
+MyChar has the value of A
+LetterValue has the value of 65
+Student mark has the value of 40
+Percentage has the value of 50
+Oldstring has a value of "Your mark is"
+NewString has the value of "Your mark is ninety-seven"

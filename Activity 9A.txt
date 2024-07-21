@@ -1,0 +1,5 @@
+1 Ask for number of Value(Sides)
+2 Apply formula (Value-2) x 180
+3 Ask for Value(Size)
+3 Output drawing of Value(Sides)
+4 Mgnify Output by Value(Size)

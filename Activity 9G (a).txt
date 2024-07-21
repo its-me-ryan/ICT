@@ -1,0 +1,36 @@
+MarathonHours -  The hours part of the marathon time - INTEGER
+MarathonMinutes - The minutes part of the marathon time - INTEGER
+MarathonSeconds - The seconds part of the marathon time - INTEGER
+TotalMarathonTimeSeconds - Total marathon time in seconds - INTEGER
+PersonalBestSec - Least amount of seconds taken to run a marathon - INTEGER
+
+
+Rest of the pseudo code :
+OUTPUT "Enter the time you took to run the marathon"
+
+OUTPUT "Enter hours"
+
+INPUT MarathonHours
+
+OUTPUT "Enter minutes"
+
+INPUT MarathonMinutes
+
+OUTPUT "Enter seconds"
+
+INPUT MarathonSeconds
+
+TotalMarathonTimeSeconds ← (MarathonHours * 3600 + MarathonMinutes) * 60 + MarathonSeconds
+
+OUTPUT "Time for marathon in seconds ",TotalMarathonTimeSeconds
+
+IF TotalMarathonTimeSeconds < PersonalBestSec DO
+
+        PersonalBestSec = TotalMarathonTimeSeconds
+        
+        PRINT "New personal best time: ", PersonalBestSec
+    ELSE 
+        PRINT "Personal best time remains: ", PersonalBestSec
+    
+    END IF
+END
